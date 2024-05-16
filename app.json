@@ -1,12 +1,12 @@
 {
   "expo": {
     "name": "bigShare",
-    "main": "expo-router/entry",
     "slug": "bigShare",
     "version": "1.0.0",
+    "main": "expo-router/entry",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "aora",
+    "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "splash": {
       "image": "./assets/images/splash.png",
@@ -24,8 +24,7 @@
     },
     "web": {
       "bundler": "metro",
-      "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "output": "static"
     },
     "plugins": [
       "expo-router"

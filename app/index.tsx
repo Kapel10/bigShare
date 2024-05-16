@@ -1,10 +1,9 @@
-import SignUp from "@/components/SignUp/SignUp";
-import {Stack, Link} from 'expo-router';
-import {View} from "react-native";
+
+import { Redirect } from 'expo-router';
 
 export default function Index() {
     return (
-        <SignUp/>
+        <Redirect href="/home" />
     );
 }
 
