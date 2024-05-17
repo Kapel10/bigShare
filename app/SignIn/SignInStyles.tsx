@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import {grayFont, borderColor, darkBlueFont} from "@/assets/fonts/Fonts";
+import {grayFont, borderColor, darkBlueFont} from '../../assets/fonts/Fonts';
 
 export const SignInStyles = StyleSheet.create({
     container: {

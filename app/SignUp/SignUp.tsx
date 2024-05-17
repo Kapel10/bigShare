@@ -9,12 +9,14 @@ import {
     View,
     ScrollView
 } from "react-native";
-import {SignUpStyles as styles} from "@/components/SignUp/SignUpStyles";
-import {grayFont} from "@/assets/fonts/Fonts";
-import {AcceptIcon, ArrowLeftIcon, CrossIcon} from "@/assets/icons/Icons";
+import {SignUpStyles as styles} from "./SignUpStyles";
+import {grayFont} from "../../assets/fonts/Fonts";
+import {AcceptIcon, ArrowLeftIcon, CrossIcon} from "../../assets/icons/Icons";
 import validator from 'validator';
+import {useRouter} from "expo-router";
 
 const SignUp = () => {
+    const router = useRouter();
     const [name, setName] = React.useState('');
     const [isNameFocused, setIsNameFocused] = React.useState(false);
     const [surname, setSurname] = React.useState('');
@@ -49,11 +51,11 @@ const SignUp = () => {
 
     return <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
         <SafeAreaView>
-            <View style={{ position: 'relative'}}>
+            <View style={{ position: 'relative', width: '100%', height: '100%'}}>
                 <View style={styles.header}>
-                    <View style={styles.icon}>
+                    <TouchableOpacity style={styles.icon} onPress={() => router.back()}>
                         <ArrowLeftIcon/>
-                    </View>
+                    </TouchableOpacity>
                     <Text style={styles.title}>Регистрация</Text>
                 </View>
                 <ScrollView automaticallyAdjustKeyboardInsets={true}>

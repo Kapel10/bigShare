@@ -1,7 +1,7 @@
 import { StyleSheet } from "react-native";
-import {grayFont, borderColor, darkBlueFont} from "@/assets/fonts/Fonts";
+import {grayFont, borderColor, darkBlueFont} from '../../assets/fonts/Fonts';
 
-export const SignUpStyles = StyleSheet.create({
+export const SignUpStyles= StyleSheet.create({
     container: {
         marginTop: 10,
         flexDirection: 'column',
